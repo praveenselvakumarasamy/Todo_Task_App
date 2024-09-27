@@ -61,3 +61,5 @@ pipeline {
                 sh 'trivy image --format table -o report1.html praveenselvakumarasamy/todo_task_app:latest'
             }
         }
+    }
+}
