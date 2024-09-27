@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/praveenselvakumarasamy/Todo_Task_App.git
     targetRevision: HEAD
-    path: 
+    path: cd
   destination:
     server: https://kubernetes.default.svc
     namespace: todo-task-app
