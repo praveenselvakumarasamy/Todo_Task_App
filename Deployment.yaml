@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo_task_app_deploy
+  name: todo-task-app-deploy
   labels:
-    app: todo_task_app
+    app: todo-task-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: todo_task_app
+      app: todo-task-app
   template:
     metadata:
       labels:
-        app: todo_task_app
+        app: todo-task-app
     spec:
       containers:
-      - name: todo_task_app-server
+      - name: todo-task-app-server
         image: praveenselvakumarasamy/todo_task_app:latest
         ports:
         - containerPort: 8080

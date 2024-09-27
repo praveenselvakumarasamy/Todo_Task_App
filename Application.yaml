@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: todo_task_app
+  name: todo-task-app
   namespace: todo-task-app
 spec:
   project: default
