@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todo_task_app
+  namespace: todo-task-app
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/praveenselvakumarasamy/Todo_Task_App.git
+    targetRevision: HEAD
+    path: 
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: todo-task-app
+
+  syncPolicy:
+    syncOptions:
+    
+
+    automated:
+      selfHeal: true
+      prune: true
