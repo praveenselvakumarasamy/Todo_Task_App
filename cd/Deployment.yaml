@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-task-app-deploy
+  name: todo-task-app
   labels:
     app: todo-task-app
 spec:
